@@ -1,7 +1,7 @@
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
-import static java.lang.Integer.parseInt;
+
 
 public class RaadHetGetal {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class RaadHetGetal {
             Scanner userinput = new Scanner(System.in);
             System.out.printf("Guess a number between 1 and 1000.\nYou have %s guesses left.\n", (10-guesses));
 
-            int guess = parseInt(userinput.nextLine());
+            int guess = userinput.nextInt();
             if(guess == number){
                 System.out.printf("Congratulations! The number was %s.\n", number);
                 // Allow the user to play again without restarting the program
